@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookings - Riget Zoo Adventures</title>
+    <!--CSS start--> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <!--CSS end--> 
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/bookings">Bookings</a>
+        <a href="/loyalty">Loyalty</a>
+        <a href="/education">Education</a>
+    </nav>
+    <h1>Bookings</h1>
+    <form method="POST">
+        Full Name: <input type="text" name="full_name" required><br>
+        Email: <input type="email" name="email" required><br>
+        Phone: <input type="tel" name="phone" required><br>
+        Date of Visit: <input type="date" name="date_of_visit" required><br>
+        Number of Tickets: <input type="number" name="tickets" min="1" required><br>
+        <input type="submit" value="Submit Booking">
+    </form>
+    <footer>&copy; 2025 Riget Zoo Adventures</footer>
+<!--Javascript start--> 
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<!--Javascript end--> 
+</body>
+</html>

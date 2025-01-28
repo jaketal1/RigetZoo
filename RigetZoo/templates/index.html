@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Riget Zoo Adventures</title>
+    <!--CSS start--> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <!--CSS end--> 
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/bookings">Bookings</a>
+        <a href="/loyalty">Loyalty</a>
+        <a href="/education">Education</a>
+    </nav>
+    <h1>Welcome to Riget Zoo Adventures!</h1>
+    <p>Select an option from the navigation bar above.</p>
+
+    <!--Adding a Carousel-->
+    <div id="carousel" style="max-width: 600px; margin: 20px auto;">
+        <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Attraction 1" style="width: 100%; display: block;">
+        <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Attraction 2" style="width: 100%; display: none;">
+        <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Attraction 3" style="width: 100%; display: none;">
+    </div>
+     <!--end of Carousel-->
+<footer>&copy; 2025 Riget Zoo Adventures</footer>
+    <!--Javascript start--> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+     <!--Javascript end--> 
+</body>
+</html>
